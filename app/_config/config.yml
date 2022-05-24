@@ -1,0 +1,66 @@
+---
+Name: app
+---
+SilverStripe\View\SSViewer:
+  themes:
+    - "$public"
+    - "starter"
+    - "$default"
+
+SilverStripe\Core\Manifest\ModuleManifest:
+  project: app
+
+SilverStripe\Core\Injector\Injector:
+  SilverStripe\Security\PasswordValidator:
+  properties:
+    MinTestScore: 4
+
+SilverStripe\Security\PasswordValidator:
+  min_test_score: 4
+
+SilverStripe\Admin\LeftAndMain:
+  help_links:
+    "Developer docs": ""
+    "Community": ""
+    "Feedback": ""
+
+BetterNavigator:
+  developers:
+    - "support@webbuildersgroup.com"
+
+SilverStripe\Security\Member:
+  extensions:
+    - 'SiteTemplate\Extensions\MemberExtension'
+
+SilverStripe\CMS\Model\SiteTree:
+  show_meta_generator_version: false
+
+---
+Name: remove-ext
+After: "#elemental-search"
+---
+SilverStripe\Core\Injector\Injector:
+  SilverStripers\ElementalSearch\Extensions\SiteTreeDocumentGenerator:
+    class: Starter\RemoveExtension
+  SilverStripe\Assets\Image_Backend:
+    properties:
+      Quality: 90
+---
+Name: app_imagick
+After: "#app"
+Only:
+  classexists: "Imagick"
+---
+SilverStripe\Core\Injector\Injector:
+  Intervention\Image\ImageManager:
+    constructor:
+      - { driver: imagick }
+---
+Name: app_dev
+After: "#app"
+Only:
+  environment: "dev"
+---
+SilverLeague\IDEAnnotator\DataObjectAnnotator:
+  enabled_modules:
+    - "app"

@@ -1,0 +1,136 @@
+/**** Anything less than $responsive-tablet-break ****/
+@media only screen and (max-width: 1064px) {
+  iframe,
+  object,
+  embed,
+  .ss-htmleditorfield-file.embed {
+    max-width: 100%;
+  }
+
+  .typography .headerContainer {
+    display: none;
+  }
+  .sideCircle {
+    display: none;
+  }
+  .sideCircleText {
+    display: none;
+  }
+  .banner-links {
+    font-size: 2em;
+  }
+  .overlay::before {
+    width: 100%;
+  }
+  .shopHeader {
+    color: #ffffff;
+  }
+  .shopCircle {
+    display: block;
+  }
+  .circleTitle {
+    display: flex;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 300;
+    justify-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+  }
+  .menuContainer {
+    display: flex;
+  }
+  .mobileNavHide {
+    display: none;
+  }
+  fieldset {
+    right: 90px;
+    top: 25px;
+  }
+  .open-button {
+    right: 15px;
+    position: relative;
+  }
+  .banner-links {
+    transform: translate(0%, 35%);
+  }
+}
+@media only screen and (max-width: 799px) {
+  .gridContainer {
+    width: 60%;
+    margin-left: auto;
+  }
+  .ml-1 {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 791px) {
+  .shownFooter {
+    display: none;
+  }
+  .hiddenFooter {
+    display: block;
+  }
+  .footerContainer {
+    justify-content: center;
+  }
+  .footerGrid > div {
+    text-align: center;
+  }
+  .myContainer {
+    flex-wrap: wrap;
+  }
+  .responsiveAlignCenter {
+    text-align: center;
+  }
+  .responsiveWrapReverse {
+    flex-wrap: wrap-reverse;
+  }
+  .gap-3 {
+    gap: 1em;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .footer {
+    flex-direction: column;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+@media only screen and (max-width: 735px) {
+  .centerButton {
+    text-align: center;
+  }
+}
+/**** Screen width smaller than $responsive-mobile-break ****/
+@media only screen and (max-width: 600px) {
+  .typography .headerContainer {
+    display: none;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .gridContainer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .dot {
+    right: 5px;
+  }
+}
+// for very small screens
+@media only screen and (max-width: 399px) {
+  .semicircle {
+    margin-top: -300px;
+  }
+  .gridContainer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map*/

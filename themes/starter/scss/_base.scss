@@ -1,0 +1,114 @@
+@use "sass:math";
+
+//Base Font Size
+$base-font-size: 16px;
+
+//Default Font Color
+$default-font-color: #151515;
+
+//Link Colors
+$link-color: #009dd9;
+$link-hover-color: #00b9ff;
+
+//Page Basics
+$page-rails: 74px;
+$page-caps: 45px;
+$page-max-width: 1210px;
+$page-margin-width: ($page-max-width - ($page-rails * 2));
+
+//Font Family
+$default-font-family: Arial, Verdana, sans-serif;
+
+//Font Weights
+$font-weight-medium: 500;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+//Line Height
+$default-line-height: 1.4em;
+
+//Responsive Break Points
+$responsive-tablet-break: 1064px;
+$responsive-mobile-break: 600px;
+
+//Font Awesome Weights
+$font-awesome-weight-regular: 400;
+$font-awesome-weight-light: 300;
+$font-awesome-weight-solid: 900;
+$font-awesome-weight-brands: normal;
+
+//Font Awesome Bootstraps
+@mixin font-awesome-bootstrap {
+  display: inline-block;
+
+  font-family: "Font Awesome 5 Pro" !important;
+  font-size: 1em;
+  font-style: normal !important;
+  font-weight: 400;
+
+  line-height: 1;
+
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  vertical-align: middle;
+}
+
+@mixin font-awesome-brands-bootstrap {
+  display: inline-block;
+
+  font-family: "Font Awesome 5 Brands" !important;
+  font-size: 1em;
+  font-style: normal !important;
+  font-weight: normal;
+
+  line-height: 1;
+
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  vertical-align: middle;
+}
+
+//After Clear Fix
+@mixin ssdt-clearfix {
+  clear: both;
+
+  display: block;
+
+  content: " ";
+
+  width: 0;
+  height: 0;
+
+  font-size: 0;
+
+  line-height: 0;
+
+  visibility: hidden;
+}
+
+//px to em unit conversion
+@function em($pixels, $context: $base-font-size) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return math.div($pixels, $context) * 1em;
+}
+
+//px to rem unit conversion
+@function rem($pixels) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @return math.div($pixels, $base-font-size) * 1rem;
+}

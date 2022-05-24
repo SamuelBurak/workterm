@@ -1,0 +1,458 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+  left: 0;
+  bottom: 0;
+  background-color: #000000;
+  color: #ffffff;
+  list-style-type: none;
+  padding-top: 4em;
+  padding-bottom: 5em;
+  padding-left: 6em;
+  padding-right: 6em;
+  gap: 10px;
+}
+
+.footer > div {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+}
+
+.footerContainer {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.footerContainer > p {
+  margin-right: 3em;
+}
+
+.footer > .myContainer {
+  -webkit-box-align: start;
+  align-items: flex-start;
+}
+
+.footer p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.marginLeftnTop {
+  margin-left: 2em;
+  margin-top: 2em;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 0.5em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.footerGrid > div {
+  display: -webkit-box;
+  display: flex;
+  gap: 2px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.hiddenFooter {
+  display: none;
+}
+
+.dot {
+  display: -webkit-box;
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 180px;
+  width: 141px;
+  height: 141px;
+  border-radius: 50%;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.parent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.responsive {
+  width: 300px;
+  height: 300px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.sideCircle {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  background-color: #1299f3;
+  border-radius: 50%;
+  box-sizing: border-box;
+  top: -10%;
+  right: 0;
+  margin-right: -310px;
+}
+
+.sideCircleText {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  max-width: 250px;
+  position: absolute;
+  top: 200px;
+  right: 100px;
+  z-index: 999;
+  color: #ffffff;
+  top: 125px;
+  right: 60px;
+  text-align: center;
+}
+
+.flexGrow {
+  -webkit-box-flex: 2;
+          flex-grow: 2;
+}
+
+.bLeft {
+  border-left: 1px solid black;
+  height: 60px;
+  margin-right: 2em;
+}
+
+.bRight {
+  border-right: 1px solid black;
+  height: 60px;
+  margin-left: 2em;
+  margin-right: 5em;
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.mt-3 {
+  margin-top: 3em;
+}
+
+.mt-2 {
+  margin-top: 2em;
+}
+
+.mt-10 {
+  margin-top: 10em;
+}
+
+.ml-1 {
+  margin-left: 1em;
+}
+
+.ml-2 {
+  margin-left: 2em;
+}
+
+.ml-8 {
+  margin-left: 8em;
+}
+
+.mr-half {
+  margin-right: 0.5em;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
+}
+
+.mb-3 {
+  margin-bottom: 3em !important;
+}
+
+.mb-5 {
+  margin-bottom: 5em;
+}
+
+.p-60p {
+  padding: 0.6em;
+}
+
+.pb-3 {
+  padding-bottom: 3em;
+}
+
+.overlay {
+  display: -webkit-box;
+  display: flex;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.overlay picture,
+.overlay img {
+  display: block;
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  width: 37.5%;
+}
+
+.semicircle {
+  height: 50vh;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin-top: -250px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.shopCircle {
+  display: none;
+  color: #ffffff;
+  height: 50vh;
+  background-color: #1299f3;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin-top: -250px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.circleTitle {
+  display: none;
+}
+
+.noBorder {
+  border: none;
+}
+
+.bgBlue {
+  background-color: #1299f3;
+}
+
+.bgOrange {
+  background-color: #f56200;
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+.contactImage {
+  display: block;
+  object-fit: cover;
+  height: auto;
+  max-width: 80%;
+  margin: 3em auto;
+}
+
+.pageContainer {
+  display: -webkit-box;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  margin: 1em auto 3em auto;
+  width: 80%;
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.myContainer {
+  display: -webkit-box;
+  display: flex;
+  margin: 1em auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.myContainer b {
+  margin-top: 10px;
+}
+
+.justifyCenter {
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.flexAlignCenter {
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.block {
+  display: block;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.autoWidthHeight {
+  width: auto !important;
+  height: auto !important;
+}
+
+.autoMargin {
+  margin: 0 auto;
+}
+
+.headerContainer {
+  display: -webkit-box;
+  display: flex;
+  /* align-items: center; */
+  margin-left: 3em;
+  margin-right: 7em;
+  margin-top: 8px;
+  margin-bottom: 13px;
+}
+
+.alignItemsCenter {
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.gap-1 {
+  gap: 1em;
+}
+
+.gap-2 {
+  gap: 2em;
+}
+
+.gap-3 {
+  gap: 3em;
+}
+
+.gap-5 {
+  gap: 5em;
+}
+
+.noMargin {
+  margin: 0;
+}
+
+.noPadding {
+  padding: 0;
+}
+
+.noMarginBottom {
+  margin-bottom: 0;
+}
+
+.noPaddingBottom {
+  padding-bottom: 0;
+}
+
+.roundedSubmit {
+  height: 6em;
+  width: 6em;
+  border-radius: 50%;
+  text-align: center;
+}
+
+button {
+  border: 1px solid black;
+  border-radius: 12px;
+}
+
+.gridContainer {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  width: 80%;
+  margin: 0 auto;
+}
+
+.gridContainer > div {
+  margin-bottom: 2em;
+}
+
+fieldset {
+  display: none;
+  position: absolute;
+  border: none;
+  padding: 0;
+  margin: 0;
+  right: 45px;
+  top: 5px;
+}
+
+#SearchForm_SearchForm_action_results {
+  display: none;
+}
+
+/*# sourceMappingURL=layout.css.map*/

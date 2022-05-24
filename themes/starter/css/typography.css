@@ -1,0 +1,241 @@
+/**
+ * This typography file is included in the WYSIWYG editor
+ */
+.typography * {
+  font-family: Montserrat;
+}
+
+.typography {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  width: 50%;
+  margin-bottom: 1em;
+  background: #000;
+  background: -webkit-repeating-linear-gradient(left, #000, #000 6px, transparent 6px, transparent 12px);
+  background: repeating-linear-gradient(90deg, #000, #000 6px, transparent 6px, transparent 12px);
+}
+
+.clickable {
+  font-size: 1.9em;
+}
+
+.clickable:hover {
+  text-shadow: 2px 2px 4px gray;
+  cursor: pointer;
+}
+
+.fs-1 {
+  font-size: 1.5em;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 300;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.whiteFont {
+  color: #ffffff;
+}
+
+.blue {
+  color: #1299f3;
+}
+
+.black * {
+  color: #000000 !important;
+}
+
+.banner-text {
+  display: -webkit-box;
+  display: flex;
+  position: absolute;
+  -webkit-box-pack: center;
+          justify-content: center;
+  top: 26%;
+  left: 6%;
+  width: auto;
+  height: 65%;
+  overflow: hidden;
+  color: #ffffff;
+  font-size: 3em;
+  z-index: 999;
+}
+
+.banner-links {
+  position: absolute;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  width: 32%;
+  height: 88%;
+  color: #ffffff;
+  font-size: 3em;
+  z-index: 999;
+}
+
+h2,
+h3 {
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.far,
+.far *,
+.fas,
+.fas *,
+.fal,
+.fal *,
+.fa,
+.fa * {
+  font-family: "Font Awesome 5 Pro" !important;
+}
+
+.fab,
+.fab * {
+  font-family: "Font Awesome 5 Brands" !important;
+}
+
+.fal,
+.fal * {
+  font-weight: 300 !important;
+}
+
+.far,
+.far * {
+  font-weight: 400 !important;
+}
+
+.fab,
+.fab * {
+  font-weight: normal !important;
+}
+
+.fas,
+.fas *,
+.fa,
+.fa * {
+  font-weight: 900 !important;
+}
+
+.typography blockquote {
+  margin-left: 20px;
+}
+
+.typography blockquote,
+.typography blockquote * {
+  font-style: italic;
+  color: #747474;
+}
+
+.typography ul > li {
+  list-style-type: none;
+}
+
+.typography ol > li {
+  list-style-type: decimal;
+}
+
+.typography h3 {
+  font-size: 1.6em;
+}
+
+.fSize-2half {
+  font-size: 2.5em !important;
+}
+
+.fSize-1half {
+  font-size: 1.5em !important;
+}
+
+.typography h4 {
+  font-size: 1.4em;
+}
+
+.typography h5 {
+  font-size: 1.2em;
+}
+
+.typography h6 {
+  font-size: 1em;
+}
+
+/* LINK STYLES */
+.typography a {
+  font-size: 1em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.typography a:hover {
+  text-decoration: none;
+}
+
+.typography table tr td {
+  padding: 3px 5px;
+}
+
+/* WYSIWYG EDITOR ALIGNMENT CLASSES */
+.typography .left,
+.typography .text-left {
+  text-align: left;
+}
+
+.typography .center,
+.typography .text-center {
+  text-align: center;
+}
+
+.typography .right,
+.typography .text-right {
+  text-align: right;
+}
+
+/**** Pagination ****/
+.pagination {
+  text-align: center;
+}
+
+.pagination a,
+.pagination strong,
+.pagination span {
+  font-weight: 700;
+  color: #009dd9;
+  line-height: 34px;
+  text-align: center;
+}
+
+.pagination a:hover {
+  color: #00b9ff;
+  text-decoration: none;
+}
+
+.pagination strong,
+.pagination span {
+  color: #999999;
+}
+
+/*# sourceMappingURL=typography.css.map*/
+
+/*# sourceMappingURL=typography.css.map*/

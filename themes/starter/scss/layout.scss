@@ -1,0 +1,297 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+// imports
+@import "_footer";
+@import "_play";
+@import "_header";
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.mt-3 {
+  margin-top: 3em;
+}
+
+.mt-2 {
+  margin-top: 2em;
+}
+
+.mt-10 {
+  margin-top: 10em;
+}
+
+.ml-1 {
+  margin-left: 1em;
+}
+
+.ml-2 {
+  margin-left: 2em;
+}
+
+.ml-8 {
+  margin-left: 8em;
+}
+
+.mr-half {
+  margin-right: 0.5em;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
+}
+
+.mb-3 {
+  margin-bottom: 3em !important;
+}
+
+.mb-5 {
+  margin-bottom: 5em;
+}
+
+.p-60p {
+  padding: 0.6em;
+}
+
+.pb-3 {
+  padding-bottom: 3em;
+}
+
+.overlay {
+  display: flex;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.overlay picture,
+.overlay img {
+  display: block;
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  width: 37.5%;
+}
+
+.semicircle {
+  height: 50vh;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin-top: -250px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.shopCircle {
+  display: none;
+  color: #ffffff;
+  height: 50vh;
+  background-color: #1299f3;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin-top: -250px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.circleTitle {
+  display: none;
+}
+
+.noBorder {
+  border: none;
+}
+
+.bgBlue {
+  background-color: #1299f3;
+}
+
+.bgOrange {
+  background-color: #f56200;
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+.contactImage {
+  display: block;
+  object-fit: cover;
+  height: auto;
+  max-width: 80%;
+  margin: 3em auto;
+}
+
+.pageContainer {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em auto 3em auto;
+  width: 80%;
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.myContainer {
+  display: flex;
+  margin: 1em auto;
+  width: fit-content;
+}
+
+.myContainer b {
+  margin-top: 10px;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.flexAlignCenter {
+  align-items: center;
+}
+
+.block {
+  display: block;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.autoWidthHeight {
+  width: auto !important;
+  height: auto !important;
+}
+
+.autoMargin {
+  margin: 0 auto;
+}
+
+.headerContainer {
+  display: flex;
+  /* align-items: center; */
+  margin-left: 3em;
+  margin-right: 7em;
+  margin-top: 8px;
+  margin-bottom: 13px;
+}
+
+.alignItemsCenter {
+  align-items: center;
+}
+
+.gap-1 {
+  gap: 1em;
+}
+
+.gap-2 {
+  gap: 2em;
+}
+
+.gap-3 {
+  gap: 3em;
+}
+
+.gap-5 {
+  gap: 5em;
+}
+
+.noMargin {
+  margin: 0;
+}
+
+.noPadding {
+  padding: 0;
+}
+
+.noMarginBottom {
+  margin-bottom: 0;
+}
+
+.noPaddingBottom {
+  padding-bottom: 0;
+}
+
+.roundedSubmit {
+  height: 6em;
+  width: 6em;
+  border-radius: 50%;
+  // margin: 1em 0 0 0;
+  text-align: center;
+}
+
+button {
+  border: 1px solid black;
+  border-radius: 12px;
+}
+
+.gridContainer {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  width: 80%;
+  margin: 0 auto;
+}
+
+.gridContainer > div {
+  margin-bottom: 2em;
+}
+
+fieldset {
+  display: none;
+  position: absolute;
+  border: none;
+  padding: 0;
+  margin: 0;
+  right: 45px;
+  top: 5px;
+}
+
+#SearchForm_SearchForm_action_results {
+  display: none;
+}

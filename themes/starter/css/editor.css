@@ -1,0 +1,100 @@
+/**
+ * This support file is used to style the WYSIWYG editor in the CMS
+ */
+@import "typography.css";
+body.mceContentBody {
+  min-height: 200px;
+  font-size: 62.5%;
+}
+
+body.mceContentBody a.broken {
+  background-color: #ff7b71;
+  border: 1px #ff0000 solid;
+}
+
+.typography hr {
+  margin: 20px 0;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid #cecece;
+}
+
+.typography img.center,
+.typography .captionImage.center,
+.typography .media.center {
+  display: block;
+  margin: 20px auto;
+}
+
+.typography table.center {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.typography table.right {
+  text-align: left;
+  margin-left: auto;
+}
+
+.typography img.left,
+.typography .captionImage.left,
+.typography .media.left,
+.typography .ss-htmleditorfield-file.embed.left {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.typography img.leftAlone,
+.typography .captionImage.leftAlone,
+.typography .media.leftAlone {
+  display: block;
+  margin: 0 0 20px 0;
+}
+
+.typography img.right,
+.typography .captionImage.right,
+.typography .media.right,
+.typography .ss-htmleditorfield-file.embed.right {
+  float: right;
+  margin: 0 0 20px 20px;
+}
+
+.typography img.rightAlone,
+.typography .captionImage.rightAlone,
+.typography .media.rightAlone {
+  display: block;
+  margin: 0 0 20px auto;
+}
+
+.typography .ss-htmleditorfield-file.embed.center {
+  display: block;
+  margin: 20px auto;
+}
+
+.typography .ss-htmleditorfield-file.embed.center {
+  text-align: center;
+}
+
+.typography .ss-htmleditorfield-file.embed.leftAlone {
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+
+.typography .ss-htmleditorfield-file.embed.rightAlone {
+  margin: 0 0 20px 0;
+  text-align: right;
+}
+
+.typography blockquote {
+  border-left: 11px solid #747474;
+  margin: 20px 0 20px 67px;
+  padding-left: 24px;
+}
+
+.typography .captionImage img {
+  float: none !important;
+  margin: 0 !important;
+}
+
+/*# sourceMappingURL=editor.css.map*/

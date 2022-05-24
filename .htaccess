@@ -1,0 +1,11 @@
+RewriteEngine On
+
+<IfDefine !%{ENV:HTTPS}>
+    RewriteCond %{REQUEST_URI} /_resources/themes/(.*)/scss/(.*)$
+    RewriteRule .* themes/%1/scss/%2 [L]
+
+    RewriteCond %{REQUEST_URI} /themes/(.*)/scss/(.*)$
+    RewriteRule .* - [L]
+</IfDefine>
+
+RewriteRule ^(.*)$ public/$1
