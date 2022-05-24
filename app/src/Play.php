@@ -31,13 +31,13 @@ class Play extends Page
 
     private static $db = [
         'SubheaderContent' => 'Text',
-        'Image1Title' => 'Varchar(255)',
+        'Image1Title' => 'Varchar',
         'Image1Description' => 'Text',
         'Image1Alt' => 'Varchar',
-        'MiddleTitle' => 'Varchar(255)',
+        'MiddleTitle' => 'Varchar',
         'MiddleContent' => 'Text',
         'Quote' => 'Text',
-        'Image2Title' => 'Varchar(255)',
+        'Image2Title' => 'Varchar',
         'Image2Alt' => 'Varchar',
         'Image2Description' => 'Text',
     ];

@@ -70,7 +70,6 @@ function isMobileMode() {
     $(".open-button").on("click", function () {
       // show the fieldset
       $(document).find("fieldset").toggle();
-      console.log("clicked");
     });
   });
 

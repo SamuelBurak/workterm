@@ -55,7 +55,7 @@ class Shop extends Page
         $fields->addFieldToTab('Root.Attachments', $photo = UploadField::create('Banner', 'Banner')->setFolderName('shop-images'));
         $fields->addFieldToTab('Root.Attachments', $photo = UploadField::create('BottomImage', 'Bottom Image')->setFolderName('shop-images'));
 
-        $fields->addFieldToTab('Root.Main', TextField::create('CircleTitle', 'Circle Title'), 'Content');
+        $fields->addFieldToTab('Root.Main', TextField::create('CircleTitle', 'Circle Title')->setMaxLength(25), 'Content');
         $fields->addFieldToTab('Root.Main', TextField::create('CircleSubtitle', 'Circle Subtitle'), 'Content');
 
         $fields->removeByName('SemiTitle');

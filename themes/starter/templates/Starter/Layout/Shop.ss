@@ -25,6 +25,7 @@
     <% with $Banner %>
         <picture>
             <source srcset="$Fill(1920,1080).WebP.URL" media="(min-width: 800px)" loading="lazy" width="1920" height="1080" >
+            <img src="$Fill(1920,1080).URL" alt="$Top.BannerAlt" loading="lazy" width="1920" height="1080" />
             <img src="$Fill(1920,1080).WebP.URL" alt="$Top.BannerAlt" loading="lazy" width="1920" height="1080" />
         </picture>
     <% end_with %>
@@ -57,7 +58,7 @@
                     <%-- image inside grid --%>
                     <% with $Image %>
                         <picture>
-                            <source srcset="$FitMax(300,300).WebP.URL" media="(min-width: 800px)" width="300" height="300">
+                            <source srcset="$FitMax(300,300).URL" media="(min-width: 800px)" width="300" height="300">
                             <img class="responsive autoMargin" src="$FitMax(300,300).WebP.URL" alt="$Up.ImageAlt" loading="lazy" width="300" height="300"/>
                         </picture>
                     <% end_with %>
@@ -87,7 +88,10 @@
     <div class="mb-5">
         <%-- image at bottom of page --%>
         <% with $BottomImage %>
-            <img class="block autoMargin responsive" src="$WebP.URL" alt="promo image" loading="lazy" width="300" height="300">
+            <picture>
+                <source srcset="$URL" media="(min-width: 800px)" width="300" height="300">
+                <img class="block autoMargin responsive" src="$Fill(1920,1080).WebP.URL" alt="$Top.BottomImageAlt" loading="lazy" width="300" height="300"/>
+            </picture>
         <% end_with %>
     </div>
 

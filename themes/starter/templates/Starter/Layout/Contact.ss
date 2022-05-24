@@ -5,7 +5,10 @@
 <div class="semicircle"></div>
 
 <% with $Photo %>
-    <img class="contactImage" src="$WebP.URL" alt="$Top.PhotoAlt" width="1146" height="680"/>
+    <picture>
+        <source srcset="$URL" media="(min-width: 800px)" loading="lazy" alt="$Top.PhotoAlt" width="1146" height="680" >
+        <img class="contactImage" src="$WebP.URL" loading="lazy" alt="$Top.PhotoAlt" width="1146" height="680" />
+    </picture>
 <% end_with %>
 
 <%-- Prompt --%>

@@ -45,6 +45,7 @@ SilverStripe\Core\Injector\Injector:
   SilverStripe\Assets\Image_Backend:
     properties:
       Quality: 90
+
 ---
 Name: app_imagick
 After: "#app"
@@ -55,6 +56,7 @@ SilverStripe\Core\Injector\Injector:
   Intervention\Image\ImageManager:
     constructor:
       - { driver: imagick }
+
 ---
 Name: app_dev
 After: "#app"

@@ -22,7 +22,7 @@
             <%-- image --%>
             <% with $Image1 %>
                 <picture>
-                    <source srcset="$FitMax(300,300).WebP.URL" media="(min-width: 800px)" width="300" height="300">
+                    <source srcset="$FitMax(300,300).URL" media="(min-width: 800px)" width="300" height="300">
                     <img class="responsive rounded" src="$FitMax(300,300).WebP.URL" alt="$Top.Image1Alt" loading="lazy" width="300" height="300"/>
                 </picture>
             <% end_with %>
@@ -66,7 +66,7 @@
             <%-- image --%>
             <% with $Image2 %>
                 <picture>
-                    <source srcset="$FitMax(300,300).WebP.URL" media="(min-width: 800px)" width="300" height="300">
+                    <source srcset="$FitMax(300,300).URL" media="(min-width: 800px)" width="300" height="300">
                     <img class="responsive rounded" src="$FitMax(300,300).WebP.URL" alt="$Top.Image2Alt" loading="lazy" width="300" height="300"/>
                 </picture>
             <% end_with %>

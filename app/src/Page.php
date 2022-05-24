@@ -38,7 +38,7 @@ class Page extends SiteTree
     public function getCMSFields()
     {
         $fields = parent::getCMSFields();
-        $fields->addFieldToTab('Root.Main', TextField::create('SemiTitle', 'Title inside semicircle'), 'Content');
+        $fields->addFieldToTab('Root.Main', TextField::create('SemiTitle', 'Title inside semicircle')->setMaxLength(45), 'Content');
         $fields->addFieldToTab('Root.Main', TextField::create('Header', 'Header'), 'Content');
         $fields->addFieldToTab('Root.Main', TextField::create('Subheader', 'Subheader'), 'Content');
         $fields->addFieldToTab('Root.Attachments', $photo = UploadField::create('Banner', 'Banner'));

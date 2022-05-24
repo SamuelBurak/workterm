@@ -42,7 +42,7 @@ class Contact extends Page
         $fields->addFieldToTab('Root.Attachments', TextField::create('PhotoAlt', 'Photo Alt')->setCustomValidationMessage('Please enter an alt text for the photo'));
         $photo->setFolderName('contact-photo');
 
-        $fields->addFieldToTab('Root.Main', TextField::create('Prompt', 'Prompt'), 'Content');
+        $fields->addFieldToTab('Root.Main', TextField::create('Prompt', 'Prompt')->setMaxLength(100), 'Content');
 
         return $fields;
     }
